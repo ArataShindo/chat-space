@@ -17,7 +17,7 @@
 
 ### Association
 - has_many :users,throigh::groups_users
-- has_many :grops_users
+- has_many :grops
 - has_many :messages
 
 ## usersテーブル
@@ -30,7 +30,7 @@
 
 ### Association
 - has_many :users,throigh::groups_users
-- has_many :grops_users
+- has_many :grops
 - has_many :messages
 
 ## messagesテーブル
