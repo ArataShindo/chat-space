@@ -16,8 +16,8 @@
 |name|string|null: false,|
 
 ### Association
-- has_many :users,throigh::groups_users
-- has_many :grops
+- has_many :users,through::groups_users
+- has_many :groups_users
 - has_many :messages
 
 ## usersテーブル
@@ -29,8 +29,8 @@
 
 
 ### Association
-- has_many :users,throigh::groups_users
-- has_many :grops
+- has_many :users,through::groups_users
+- has_many :groups_users
 - has_many :messages
 
 ## messagesテーブル
