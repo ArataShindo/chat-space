@@ -1,60 +1,68 @@
-.chat-side{
-  height: 100vh;
+.chat-side {
   width: 300px;
-  float: left;
-  background-color: #2f3e51;
-  .header {
-    height: 100px;
-    width: 300px;
+  float: left;  
+  color:#FFFFFF; 
+  .side-header {
     background-color: #253141;
-    display: flex;
-    align-items: center;
-    // サイドヘッター内のボックス
-      &__box {
+      height: 100px;    
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+
+    &__box {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;        
+      &__menu {
         display: flex;
-        justify-content: space-between;
-        font-weight: bold;
-        height: 20px;
-        margin: 0 auto;
-        width: 260px;
-        // サイドヘッター内のボックス内ユーザー名
-            &__user-name {
-             color: white;
-             font-size: 16px  ;
-             display: block;
-             line-height: center;
-            }
-        // サイドヘッター内のボックス内アイコン
-            ul {
-            list-style: none;
-            display: flex;
-            justify-content: flex-end;
-            width: 60px;
-            }
-            i {
-              margin-left: 5px;
-              color: #fff;
-            } 
+        &__btn {
+          margin-left: 0.3rem;
+          margin-right: 0.3rem;
+        }
+        &__edit-user {
+          margin-left: 0.3rem;
+
+        }
       }
+    }
+  }  
+  .groups {
+    background-color: #2f3e51;
+    height: calc(100vh - 120px);     
+    padding: 20px 20px 0px;
+    overflow: scroll;
+    .group {
+      width: 100%;
+      margin-bottom: 40px;
+    a {
+      color: #FFFFFF;
+      text-decoration: none;
+    }
+
+      .group__group-name {
+          font-size: 15px;
+          padding-bottom: 5px;
+        }
+      .group__latest-message {
+          font-size: 11px;
+        }
+      
+    }
   }
+}
+.btn2 {
+  color: #FFFFFF;
 }
 
-// サイドグループ
-.groups {
-  height: calc(100vh - 100px);
-  padding: 20px 20px 0;
-  box-sizing: border-box;
-  .group {
-    color: white;
-    text-decoration: none;
-    p.group__group-name {
-      margin-top: 20px;
-      font-size: 15px;
-      margin-bottom: 5px;
-    }
-    p.group__group-message {
-      font-size: 11px;
-      margin-bottom: 40px;
-    }
-  }
+
+
+
+.group__name {
+  font-size: 15px;
+  padding-bottom: 5px;
 }
+.group__message {
+  font-size: 11px;
+}
+
